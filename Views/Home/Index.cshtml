@@ -1,0 +1,9 @@
+@{
+    ViewData["Title"] = "Home Page";
+    <h1>Name: @ViewBag.PokeInfo["name"]</h1>
+    <ul>
+        <li>Type: @ViewBag.PokeInfo["types"][0]["type"]["name"]</li>
+        <li>Height: @ViewBag.PokeInfo["height"]</li>
+        <li>Weight: @ViewBag.PokeInfo["weight"]</li>
+    </ul>
+}
